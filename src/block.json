@@ -33,8 +33,8 @@
 	"attributes": {
 		"text": {
 			"type": "string",
-			"source": "html",
-			"selector": "h4"
+			"source": "text",
+			"selector": "iframe"
 		},
 		"alignment": {
 			"type": "string",

@@ -175,8 +175,7 @@ function Edit(props) {
     values: style && style.spacing && style.spacing.padding,
     showValues: style && style.visualizers && style.visualizers.padding
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("iframe", {
-    src: attributes.text,
-    frameBorder: "0"
+    src: "{ text }"
   })));
 }
 
@@ -347,8 +346,7 @@ function save(_ref) {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save({
     className: classes
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("iframe", {
-    src: attributes.text,
-    frameBorder: "0"
+    src: "{ text }"
   }));
 }
 
@@ -509,7 +507,7 @@ module.exports = window["wp"]["i18n"];
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"create-block/xenome","version":"0.1.0","title":"Xenome (poll)","category":"media","icon":"xenome","description":"Make the unfamiliar familiar – Educate, empower and listen to your audience through bite-sized pieces of information and clever feedback mechanisms.","supports":{"html":false,"color":{"background":true,"text":false,"gradients":true},"spacing":{"padding":true}},"styles":[{"name":"squared","label":"Squared","isDefault":true},{"name":"rounded","label":"Rounded"}],"textdomain":"xenome","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","attributes":{"text":{"type":"string","source":"html","selector":"h4"},"alignment":{"type":"string","default":"left"},"shadow":{"type":"boolean","default":false},"shadowOpacity":{"type":"number","default":30},"backgroundColor":{"type":"string"},"textColor":{"type":"string","default":"very-light-gray"},"gradient":{"type":"string"},"style":{"type":"object","default":{"color":{"background":"#000"},"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}}}}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"create-block/xenome","version":"0.1.0","title":"Xenome (poll)","category":"media","icon":"xenome","description":"Make the unfamiliar familiar – Educate, empower and listen to your audience through bite-sized pieces of information and clever feedback mechanisms.","supports":{"html":false,"color":{"background":true,"text":false,"gradients":true},"spacing":{"padding":true}},"styles":[{"name":"squared","label":"Squared","isDefault":true},{"name":"rounded","label":"Rounded"}],"textdomain":"xenome","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","attributes":{"text":{"type":"string","source":"text","selector":"iframe"},"alignment":{"type":"string","default":"left"},"shadow":{"type":"boolean","default":false},"shadowOpacity":{"type":"number","default":30},"backgroundColor":{"type":"string"},"textColor":{"type":"string","default":"very-light-gray"},"gradient":{"type":"string"},"style":{"type":"object","default":{"color":{"background":"#000"},"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}}}}');
 
 /***/ })
 

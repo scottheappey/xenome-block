@@ -44,7 +44,9 @@ export default function save( { attributes } ) {
 				className: classes,
 			} ) }
 		>
-		<iframe src={ attributes.text } frameBorder="0"></iframe>
+			<iframe src="{ text }"></iframe>
+		
 		</div>
 	);
+	
 }
